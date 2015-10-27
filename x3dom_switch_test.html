@@ -1,0 +1,70 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Hello World</title>
+    <link rel="stylesheet" type="text/css" href="x3dom/x3dom.css" />
+
+    <script type="text/javascript" src="jquery/jquery.js"></script>
+    <script type="text/javascript" src="x3dom/x3dom.js"></script>
+    <script type="text/javascript" src="x3dom_switch.js"></script>
+    <script type="text/javascript" src="main.js"></script>
+
+</head>
+<body>
+
+<h1>XHTML Hello World</h1>
+
+<X3D id="X3D1" xmlns="http://www.web3d.org/specifications/x3d-namespace" showStat="true" showLog="true" x="0px" y="0px" width="800px" height="600px" altImg="helloX3D-alt.png">
+    <Scene render="true" bboxCenter="0,0,0" bboxSize="-1,-1,-1" pickMode="idBuf" doPickPass="true" >
+        <Transform id="scene1">
+            <Transform translation="-2 0 0" id="ShapeDeep1">
+                <Transform translation="-2 0 0" id="ShapeDeep2">
+                    <Transform translation="-2 0 0" id="Shape1">
+                        <Shape>
+                            <Appearance>
+                                <Material diffuseColor="0 0 1" />
+                            </Appearance>
+                            <Sphere/>
+                        </Shape>
+                    </Transform>
+                </Transform>
+                <Transform translation="0 2 -2" id="Shape3">
+                    <Shape>
+                        <Appearance>
+                            <Material diffuseColor="1 0 0" />
+                        </Appearance>
+                        <Sphere/>
+                    </Shape>
+                </Transform>
+            </Transform>
+        </Transform>
+    </Scene>
+</X3D>
+
+
+
+<X3D id="X3D2" xmlns="http://www.web3d.org/specifications/x3d-namespace" showStat="true" showLog="true" x="0px" y="0px" width="800px" height="600px" altImg="helloX3D-alt.png">
+    <Scene render="true" bboxCenter="0,0,0" bboxSize="-1,-1,-1" pickMode="idBuf" doPickPass="true" >
+        <Transform id="scene2">
+
+
+            <Transform translation="2 0 2" id="Shape2">
+                <Shape>
+                    <Appearance>
+                        <Material diffuseColor="0 1 0" />
+                    </Appearance>
+                    <Sphere/>
+                </Shape>
+            </Transform>
+
+        </Transform>
+
+
+    </Scene>
+</X3D>
+
+
+</body>
+</html>
